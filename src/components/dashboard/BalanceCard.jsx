@@ -33,14 +33,11 @@ const BalanceCard = () => {
     formattedTotalBalance = formatFallback()
   }
 
-  const isLowChange = totalBalance.changePercent < 5
   const isPositiveChange = totalBalance.changePercent > 0
 
-  const changeBadgeClasses = isLowChange
-    ? 'bg-red-100 text-gray-700'
-    : isPositiveChange
-      ? 'bg-green-200 text-green-700'
-      : 'bg-red-200 text-gray-700'
+  const changeBadgeClasses = isPositiveChange
+    ? 'bg-green-200/50 text-green-600'
+    : 'bg-red-200/50 text-red-600'
 
   return (
     <div>

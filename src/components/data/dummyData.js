@@ -57,6 +57,63 @@ export const wallets = [
     },
 ]
 
+export const statCards = [
+    {
+        id: 1,
+        title: "Total Earnings",
+        amount: 950,
+        currencySymbol: "$",
+        changePercent: 7,
+        changeDirection: "up",
+        label: "This month",
+        variant: "orange",
+        icon: "Wallet",
+    },
+    {
+        id: 2,
+        title: "Total Spending",
+        amount: 700,
+        currencySymbol: "$",
+        changePercent: 5,
+        changeDirection: "down",
+        label: "This month",
+        variant: "default",
+        icon: "CircleDollarSign",
+    },
+    {
+        id: 3,
+        title: "Total Income",
+        amount: 1050,
+        currencySymbol: "$",
+        changePercent: 8,
+        changeDirection: "up",
+        label: "This month",
+        variant: "default",
+        icon: "Database",
+    },
+    {
+        id: 4,
+        title: "Total Revenue",
+        amount: 850,
+        currencySymbol: "$",
+        changePercent: 4,
+        changeDirection: "up",
+        label: "This month",
+        variant: "default",
+        icon: "ChartNoAxesCombined",
+    },
+]
+
+export const monthlySpendingLimit = {
+    title: "Monthly Spending Limit",
+    spentAmount: 1650,
+    totalAmount: 5500,
+    progressPercent: 45,
+    currency: "USD",
+    currencySymbol: "$",
+    summaryLabel: "spent out of",
+}
+
 // export const earningsData = { amount: 950, changePercent: 7, direction: "up" };
 // export const spendingData = { amount: 700, changePercent: 5, direction: "down" };
 // export const incomeData = { amount: 1050, changePercent: 8, direction: "up" };

@@ -1,12 +1,10 @@
 import BalanceCard from '../components/dashboard/BalanceCard'
-import EarningsCard from '../components/dashboard/EarningsCard'
-import SpendingCard from '../components/dashboard/SpendingCard'
-import IncomeCard from '../components/dashboard/IncomeCard'
-import RevenueCard from '../components/dashboard/RevenueCard'
+import StatCard from '../components/dashboard/StatCard'
 import IncomeChart from '../components/dashboard/IncomeChart'
 import SpendingLimit from '../components/dashboard/SpendingLimit'
 import MyCard from '../components/dashboard/MyCard'
 import RecentActivities from '../components/dashboard/RecentActivities'
+import { statCards } from '../components/data/dummyData'
 
 const Overview = ({ userName }) => {
   return (
@@ -27,12 +25,11 @@ const Overview = ({ userName }) => {
         </div>
 
         {/* Col 2 — 4 mini cards */}
-        <div className="min-h-[230px] rounded-2xl bg-[#F5F5F5] p-3">
-          <div className="grid grid-cols-2 gap-4">
-            <div className="border border-green-500 min-h-[120px]"><EarningsCard /></div>
-            <div className="border border-green-500 min-h-[120px]"><SpendingCard /></div>
-            <div className="border border-green-500 min-h-[120px]"><IncomeCard /></div>
-            <div className="border border-green-500 min-h-[120px]"><RevenueCard /></div>
+        <div className="min-h-[230px] rounded-2xl bg-[#F5F5F5] p-3 flex flex-col">
+          <div className="grid grid-cols-2 grid-rows-2 gap-4 flex-1">
+            {statCards.map(card => (
+              <StatCard key={card.id} {...card} />
+            ))}
           </div>
         </div>
 

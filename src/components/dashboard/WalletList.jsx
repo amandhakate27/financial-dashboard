@@ -20,7 +20,7 @@ const WalletList = () => {
 
       {/* 3 Wallet Columns — horizontal layout matching screenshot */}
       <div className="grid grid-cols-3 gap-2">
-        {wallets.map((wallet, index) => (
+        {wallets.map((wallet) => (
           <div
             key={wallet.id}
             className="flex flex-col gap-1 bg-[#F5F5F5] rounded-lg px-3 py-2"
@@ -29,10 +29,10 @@ const WalletList = () => {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-1.5">
                 <span
-                  className="inline-flex h-4 w-4 shrink-0 items-center justify-center [&>svg]:w-full [&>svg]:h-full"
+                  className="inline-flex h-4 w-4 shrink-0 items-center justify-center align-middle [&>svg]:block [&>svg]:w-full [&>svg]:h-full"
                   dangerouslySetInnerHTML={{ __html: wallet.flagImg }}
                 />
-                <span className="text-xs text-[#111]">
+                <span className="inline-flex items-center text-xs leading-none text-[#111]">
                   {wallet.currency}
                 </span>
               </div>
@@ -52,13 +52,15 @@ const WalletList = () => {
             </p>
 
             {/* Status */}
-            <p
+            <span
               className={`text-[10px] font-semibold ${
-                wallet.status === "Active" ? "text-green-500" : "text-red-400"
+                wallet.status === "Active"
+                  ? "text-green-600"
+                  : "text-red-600"
               }`}
             >
               {wallet.status}
-            </p>
+            </span>
           </div>
         ))}
       </div>
