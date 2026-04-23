@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Finexy logo">
+  <defs>
+    <linearGradient id="finexyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="40%" stop-color="rgba(234, 88, 12, 1)" />
+      <stop offset="95%" stop-color="rgba(247, 145, 104, 1)" />
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="29" fill="url(#finexyGrad)" />
+</svg>
