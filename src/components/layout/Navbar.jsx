@@ -29,13 +29,13 @@ const Navbar = () => {
       </div>
 
       {/* CENTER — Nav Links */}
-      <div className="flex items-center gap-2 bg-white px-2.5 py-1.5 rounded-3xl">
+      <div className="flex items-center gap-2 bg-white px-2.5 py-2 rounded-3xl">
         {/* Overview (active — black pill) */}
         {/* Activity, Manage, Program, Account, Reports */}
         <NavLink
           to="/overview"
           className={({ isActive }) =>
-            `px-3 py-1.5 rounded-full transition-all duration-300 ease-out ${isActive
+            `px-3 py-1.5 text-[13px] rounded-full transition-all duration-300 ease-out ${isActive
               ? 'gloss-active text-white font-normal shadow-[0_8px_20px_rgba(0,0,0,0.2)]'
               : 'text-[#212121] hover:bg-gray-100'
             }`
@@ -46,7 +46,7 @@ const Navbar = () => {
         <NavLink
           to="/activity"
           className={({ isActive }) =>
-            `px-3 py-1.5 rounded-full transition-all duration-300 ease-out ${isActive
+            `px-3 py-1.5 text-[13px] rounded-full transition-all duration-300 ease-out ${isActive
               ? 'gloss-active text-white font-normal shadow-[0_8px_20px_rgba(0,0,0,0.2)]'
               : 'text-[#212121] hover:bg-gray-100'
             }`
@@ -57,7 +57,7 @@ const Navbar = () => {
         <NavLink
           to="/manage"
           className={({ isActive }) =>
-            `px-3 py-1.5 rounded-full transition-all duration-300 ease-out ${isActive
+            `px-3 py-1.5 text-[13px] rounded-full transition-all duration-300 ease-out ${isActive
               ? 'gloss-active text-white font-normal shadow-[0_8px_20px_rgba(0,0,0,0.2)]'
               : 'text-[#212121] hover:bg-gray-100'
             }`
@@ -68,7 +68,7 @@ const Navbar = () => {
         <NavLink
           to="/program"
           className={({ isActive }) =>
-            `px-3 py-1.5 rounded-full transition-all duration-300 ease-out ${isActive
+            `px-3 py-1.5 text-[13px] rounded-full transition-all duration-300 ease-out ${isActive
               ? 'gloss-active text-white font-normal shadow-[0_8px_20px_rgba(0,0,0,0.2)]'
               : 'text-[#212121] hover:bg-gray-100'
             }`
@@ -79,7 +79,7 @@ const Navbar = () => {
         <NavLink
           to="/account"
           className={({ isActive }) =>
-            `px-3 py-1.5 rounded-full transition-all duration-300 ease-out ${isActive
+            `px-3 py-1.5 text-[13px] rounded-full transition-all duration-300 ease-out ${isActive
               ? 'gloss-active text-white font-normal shadow-[0_8px_20px_rgba(0,0,0,0.2)]'
               : 'text-[#212121] hover:bg-gray-100'
             }`
@@ -90,7 +90,7 @@ const Navbar = () => {
         <NavLink
           to="/reports"
           className={({ isActive }) =>
-            `px-3 py-1.5 rounded-full transition-all duration-300 ease-out ${isActive
+            `px-3 py-1.5 text-[13px] rounded-full transition-all duration-300 ease-out ${isActive
               ? 'gloss-active text-white font-normal shadow-[0_8px_20px_rgba(0,0,0,0.2)]'
               : 'text-[#212121] hover:bg-gray-100'
             }`
@@ -121,7 +121,7 @@ const Navbar = () => {
             className="w-8 h-8 rounded-full object-cover"
           />
           <div className="flex flex-col leading-tight">
-            <span className="text-[15px] text-gray-900">{userProfile.name}</span>
+            <span className="text-[14px] text-gray-900">{userProfile.name}</span>
             <span className="text-xs text-[#212121]">{formatEmail(userProfile.email)}</span>
           </div>
           <ChevronDown size={16} className="text-black" />

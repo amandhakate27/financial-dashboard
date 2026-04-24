@@ -112,6 +112,8 @@ export const statCards = [
     },
 ]
 
+// Monthly Spending Limit dummy data
+
 export const monthlySpendingLimit = {
     title: "Monthly Spending Limit",
     spentAmount: 1650,
@@ -122,7 +124,7 @@ export const monthlySpendingLimit = {
     summaryLabel: "spent out of",
 }
 
-
+// My Cards dummy data
 export const myCards = [
     {
         id: 1,
@@ -138,6 +140,7 @@ export const myCards = [
     },
 ]
 
+// Recent Activities dummy data
 export const recentActivities = [
     {
         id: 1,
@@ -252,18 +255,22 @@ export const recentActivities = [
 ]
 
 
+// Chart data
 
-
-// export const chartData = [
-//     { month: "Jan", profit: 28000, loss: 12000 },
-//     { month: "Feb", profit: 32000, loss: 14000 },
-//     { month: "Mar", profit: 30000, loss: 10000 },
-//     { month: "Apr", profit: 38000, loss: 16000 },
-//     { month: "May", profit: 42000, loss: 18000 },
-//     { month: "Jun", profit: 45000, loss: 20000 },
-//     { month: "Jul", profit: 36000, loss: 15000 },
-//     { month: "Aug", profit: 30000, loss: 13000 },
-// ];
+export const chartData = [
+    { month: "Jan", profit: 25000, loss: 28000 },
+    { month: "Feb", profit: 40000, loss: 20000 },
+    { month: "Mar", profit: 30000, loss: 20000 },
+    { month: "Apr", profit: 38000, loss: 25000 },
+    { month: "May", profit: 22000, loss: 42000 },
+    { month: "Jun", profit: 45000, loss: 20000 },
+    { month: "Jul", profit: 18000, loss: 36000 },
+    { month: "Aug", profit: 30000, loss: 13000 },
+    { month: "Sep", profit: 12000, loss: 34000 },
+    { month: "Oct", profit: 39000, loss: 16000 },
+    { month: "Nov", profit: 15000, loss: 41000 },
+    { month: "Dec", profit: 47000, loss: 19000 },
+];
 
 // export const activities = [
 //     { id: "INV-000076", activity: "Mobile App Purchase", icon: "smartphone", price: 25500, status: "Completed", date: "17 Apr, 2026 03:45 PM" },
